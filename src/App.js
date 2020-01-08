@@ -116,10 +116,10 @@ const App = () => {
       {/* <br/> */}
       <div style={{/*display:'inline-block'*/float:'right', width:'auto',border:'1px solid black',position: 'relative'}}  >
         <div /*style={{display:'inline-block',margin:'auto'}}*/>
-        {gameOver && <div>GAME OVER! {score}</div>}
+        {gameOver && <div>GAME OVER! Score: {score}</div>}
         <button onClick={() => startGame(document.getElementById('speed').value,document.getElementById('mapWidth').value,document.getElementById('mapHeight').value,document.getElementById('wrapMode').checked)}>Start Game</button>
         <br/>
-        <p>Speed:</p>
+        <p>Frame rate:</p>
         <input id="speed" name="speed" type="number" defaultValue={speed||SPEED} />
         <br/>
         <p>Map width:</p>
